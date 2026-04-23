@@ -38,4 +38,3 @@ else:
             st.write('Ele veio so dia 17/04/2026')
         if dia1 is False and dia2 is False:
             st.error('ele nao veio nenhum dia')
-    st.button('Gerar relatorio')
