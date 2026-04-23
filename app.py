@@ -11,8 +11,8 @@ elif escolha == 'Gian Li':
     st.info('Alguma inforcao se necessario')
     st.info('Apareceria um quadrado com as informacoes do rapaz em questao:')
     st.info('Compareceu na aula:')
-    dia1 = st.selectbox('Terca-feira - 07/04/2026', False)
-    dia2 = st.selectbox('Quinta-feita - 09/04/2026', False)
+    dia1 = st.checkbox('Terca-feira - 07/04/2026', False)
+    dia2 = st.checkbox('Quinta-feita - 09/04/2026', False)
     if st.button('Gerar relatorio'):
         if dia1 is True and dia2 is True:
             st.write('Ele veio dia 07/04/2026 e 09/04/2026')
