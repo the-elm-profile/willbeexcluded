@@ -1,10 +1,9 @@
 import streamlit as st
-
+st.title('None do aplicativo - ainda nao pensei sobre')
 with st.sidebar:
     st.header('Exemplo')
     escolha = st.selectbox('Escolha aluno', ['Aluno', 'Gian Li', 'Felipinho'])
 if escolha == 'Aluno':
-    st.title('None do aplicativo - ainda nao pensei sobre')
     st.info('Selectione um aluno para visualizar seus dados.')
     st.warning('Cuido com o fogo Felipe')
 elif escolha == 'Gian Li':
