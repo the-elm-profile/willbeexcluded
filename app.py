@@ -3,7 +3,7 @@ import streamlit as st
 with st.sidebar:
     st.header('Exemplo')
     escolha = st.checkbox('Escolha aluno', ['Gian Li', 'Felipinho'])
-if escolha = 'Gian Li':
+if escolha == 'Gian Li':
     st.title('Gian Li')
     st.info('Alguma inforcao se necessario')
     st.info('Apareceria um quadrado com as informacoes do rapaz em questao')
