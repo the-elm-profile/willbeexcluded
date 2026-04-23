@@ -20,7 +20,7 @@ elif escolha == 'Gian Li':
             st.write('Ele veio so dia 09/04/2026')
         if dia1 is True and dia2 is False:
             st.write('Ele veio so dia 07/04/2026')
-        else:
+        if dia1 is False and dia2 is False:
             st.error('ele nao veio nenhum dia')
 else:            
     st.title('Felipinho')
