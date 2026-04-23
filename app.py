@@ -26,4 +26,16 @@ else:
     st.title('Felipinho')
     st.info('Inforcao do Felipe')
     st.info('Area com as inforcacoes do aluno, para ser visualizada, editada, etc')
+    st.info('Compareceu na aula:')
+    dia1 = st.checkbox('Sexta-feira - 17/04/2026', False)
+    dia2 = st.checkbox('Sabado - 18/04/2026', False)
+    if st.button('Gerar relatorio'):
+        if dia1 is True and dia2 is True:
+            st.write('Ele veio dia 17/04/2026 e 18/04/2026')
+        if dia2 is True and dia1 is False:
+            st.write('Ele veio so dia 18/04/2026')
+        if dia1 is True and dia2 is False:
+            st.write('Ele veio so dia 17/04/2026')
+        if dia1 is False and dia2 is False:
+            st.error('ele nao veio nenhum dia')
     st.button('Gerar relatorio')
